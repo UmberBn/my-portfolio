@@ -1,0 +1,23 @@
+/* CSS HEX */
+:root{
+--xanadu: #73877bff;
+--red-crayola: #ef2d56ff;
+--floral-white: #fff8f0ff;
+--deep-champagne: #ffcf99ff;
+--space-cadet: #111d4aff;
+}
+
+body{
+    color: var(--floral-white);
+    background-color: var(--space-cadet);
+}
+
+.name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.abilities-list{
+    font-family: fantasy;
+    font-style: italic;
+}
