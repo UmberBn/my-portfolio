@@ -1,23 +1,47 @@
 /* CSS HEX */
 :root{
---xanadu: #73877bff;
---red-crayola: #ef2d56ff;
---floral-white: #fff8f0ff;
---deep-champagne: #ffcf99ff;
---space-cadet: #111d4aff;
+--middle-blue-green: #82d4bbff;
+--shadow-blue: #788aa3ff;
+--dark-jungle-green: #172121ff;
+--persian-pink: #ff88dcff;
+--ultra-red: #ff6978ff;
 }
 
-body{
-    color: var(--floral-white);
-    background-color: var(--space-cadet);
+html,body{
+    margin: 0;
+    padding: 0;
 }
 
-.name{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+.personal-data{
+    display: flex;
+    /* Imagem de <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=828648">Free-Photos</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=828648">Pixabay</a>*/
+    background-image: url(img/sky-full-stars.jpg);
+    justify-content: space-around;
+    align-items: center;
 }
 
-.abilities-list{
-    font-family: fantasy;
-    font-style: italic;
+.personal-data img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.personal-data ul, li{
+    list-style-type: none;
+    display: inline;
+}
+
+.personal-data li a {
+    text-decoration: none;
+    color: #FFFFFA;
+    font-size: 25px;
+    margin-left: 6px;
+    padding: 7px;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    transition: color 1s, border 0.5s;
+}
+
+.personal-data li a:hover{
+    color: rgb(245, 200, 200);
+    border: 2px solid whitesmoke;
 }
