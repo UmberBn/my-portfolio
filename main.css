@@ -38,10 +38,10 @@ html,body{
     padding: 7px;
     border: 1px solid whitesmoke;
     border-radius: 50px;
-    transition: color 1s, border 0.5s;
+    transition: color 1s;
 }
 
 .personal-data li a:hover{
-    color: rgb(245, 200, 200);
+    color:var(--shadow-blue);
     border: 2px solid whitesmoke;
 }
