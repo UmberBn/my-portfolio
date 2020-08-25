@@ -5,6 +5,7 @@
 --dark-jungle-green: #172121ff;
 --persian-pink: #ff88dcff;
 --ultra-red: #ff6978ff;
+--confirm-green: #21df04;
 }
 
 html,body{
@@ -12,25 +13,29 @@ html,body{
     padding: 0;
 }
 
-.personal-data{
+.header-menu{
     display: flex;
     /* Imagem de <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=828648">Free-Photos</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=828648">Pixabay</a>*/
     background-image: url(img/sky-full-stars.jpg);
+    
+    background-size: cover;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
 }
 
-.personal-data img {
-    width: 100px;
-    border-radius: 50%;
+.header-menu img {
+    width: 80px;
+    
 }
 
-.personal-data ul, li{
+.header-menu li{
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    
 }
 
-.personal-data li a {
+.header-menu li a {
     text-decoration: none;
     color: #FFFFFA;
     font-size: 25px;
@@ -39,9 +44,65 @@ html,body{
     border: 1px solid whitesmoke;
     border-radius: 50px;
     transition: color 1s;
+    
 }
 
-.personal-data li a:hover{
-    color:var(--shadow-blue);
+.header-menu li a:hover{
+    color:var(--confirm-green);
     border: 2px solid whitesmoke;
+}
+
+
+.whoAmI{
+    height: 100vh;
+    display: flex;
+    background-color: #fbf1f1fb;
+    position: relative;
+}
+
+.page-card{
+ 
+    width: 50vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.page-card .box{
+    height: 90%;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.question{
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+
+.info-img{
+    width: 85px;
+    border-radius: 50%;
+    -webkit-box-shadow: 6px 4px 5px 0px rgba(50, 50, 50, 0.47);
+    -moz-box-shadow:    6px 4px 5px 0px rgba(50, 50, 50, 0.47);
+    box-shadow:         6px 4px 5px 0px rgba(50, 50, 50, 0.47);
+}
+
+.flex-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.flex-card .info-description{
+    width:70%;
+    text-align: justify;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+.histories{
+    width: 50vw;
 }
