@@ -16,33 +16,40 @@ html,body{
     scroll-behavior: smooth;
 }
 
-.header-menu{
+.header-main{
     display: flex;
     /* Imagem de <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=828648">Free-Photos</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=828648">Pixabay</a>*/
     background-image: url(img/sky-full-stars.jpg);
-    
     background-size: cover;
-    justify-content: space-around;
+    background-attachment: fixed;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
 }
 
-.header-menu img {
-    width: 100px;
+.header-main img {
+    width: 200px;
     border-radius: 50%;
 
 }
 
-.header-menu li{
+.nav-menu{
+    margin: 0 auto;
+}
+.header-main ul{
+    padding: 0;
+}
+.header-main li{
     list-style-type: none;
     display: inline-block;
+    margin: 15px 0;
     
 }
 
-.header-menu li a {
+.header-main li a {
     text-decoration: none;
     color: #FFFFFA;
-    font-size: 25px;
+    font-size: 2rem;
     margin-left: 6px;
     padding: 7px;
     border: 1px solid whitesmoke;
@@ -51,13 +58,41 @@ html,body{
     
 }
 
-.header-menu li a:hover{
+.header-main li a:hover{
     color:var(--confirm-green);
     border: 2px solid whitesmoke;
 }
 
+.header-content{
+    width: 75%;
+    text-align: center;
+}
+
+.header-content p{
+    font-size: 2.4rem;
+    font-family: Caveat;
+    color: #f5f5f5;
+    margin: 0;
+}
+.header-content p:first-child{
+    font-weight: bolder;
+}
+.main-personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.main-personal p{
+   margin-left: 30px;
+}
+
+
+
 .whoAmI{
     background-image: url(img/florest.jpg);
+    background-attachment: fixed;
     background-size: cover;
     height: 100%;
     display: flex;
